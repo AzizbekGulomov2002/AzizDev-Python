@@ -1,0 +1,1 @@
+web: gunicorn AZIZDEVELOPER.wsgi --log-file -
