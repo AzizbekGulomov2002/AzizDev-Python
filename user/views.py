@@ -16,4 +16,4 @@ class Index(View):
         return render(request, 'index.html',
                       {'info': info,
                        'service': service,
-                       'documents': documents})
+                       'documents': documents}) 

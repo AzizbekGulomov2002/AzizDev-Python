@@ -1,6 +1,5 @@
-from tabnanny import verbose
 from django.db import models
-from sqlalchemy import null
+
 
 # Create your models here.
 class Infomatsion(models.Model):
@@ -15,10 +14,6 @@ class Infomatsion(models.Model):
     faoliyat = models.IntegerField(default=0)
     project = models.IntegerField(default=0)
     mukofot = models.IntegerField(default=0)
-    
-    
-    
-    
     
     def __str__(self):
         return self.frist_name + ' ' + self.last_name
