@@ -1,0 +1,44 @@
+1) yangi deploy ochish 
+
+2) cmd dan loyiha deployga o'tish uchun :
+
+
+
+______________________________________________________________________________________
+
+
+sshroot@( googleda turgan api manzil)
+parol: @Azizbek1py
+
+
+______________________________________________________________________________________
+
+
+env ga qaytadan kirib olish uchun:
+
+cd /myproject/
+
+source projectenv/bin/activate
+
+va:
+
+cd /myproject/AZIZDEVELOPER
+
+______________________________________________________________________________________
+
+
+
+agar static(css, js) fayllar ishlamay qolsa:
+
+
+loyiha cmd :
+
+Pip install whitnoi
+
+settings.py Middleware da:
+
+"whitenoise.middleware.WhiteNoiseMiddleware",
+
+
+
+______________________________________________________________________________________
