@@ -7,7 +7,7 @@
 ______________________________________________________________________________________
 
 
-sshroot@( googleda turgan api manzil)
+ssh root@( googleda turgan api manzil)
 parol: @Azizbek1py
 
 
