@@ -1,13 +1,16 @@
-1) yangi deploy ochish 
 
-2) cmd dan loyiha deployga o'tish uchun :
+
+app login paroli:
+
+login: aziz
+parol: azizbek1529
 
 
 
 ______________________________________________________________________________________
 
 
-ssh root@( googleda turgan api manzil)
+ssh root@( googleda turgan api manzil) 165.22.195.104
 parol: @Azizbek1py
 
 
@@ -41,4 +44,36 @@ settings.py Middleware da:
 
 
 
-______________________________________________________________________________________
+______________________________________________________________________________
+
+
+
+
+
+(Service uchun ham root)
+user -  root
+(komanda - whoami)
+
+
+project - myproject
+
+
+______________________________________________________________________________
+
+
+CREATE DATABASE myproject;
+
+CREATE USER myprojectuser WITH PASSWORD 'azizbek1529';
+
+
+______________________________________________________________________________
+
+
+cmda nanodan chiqib ketish uchun : Crtl+O / Enter / Ctrl+X 
+
+
+
+_______________________________________________________
+
+
+sudo nano /etc/uwsgi/sites/AzizDev.ini

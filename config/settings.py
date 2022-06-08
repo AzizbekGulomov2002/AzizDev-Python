@@ -16,8 +16,8 @@ SECRET_KEY = 'django-insecure-cts$&*d!!y(8@25oay-(^^%uiv(k5yeczeg1sr4r^df=*5e+bq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
-
+ALLOWED_HOSTS = ['*']
+#165.22.195.104','localhost','192.168.0.1
 
 # Application definition
 
@@ -70,6 +70,16 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'azizbek1529',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 DATABASES = {
     'default': {
@@ -77,7 +87,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -113,11 +122,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
+
+
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'assets')
-# STATICFILES_DIRS = [
-#     str(BASE_DIR.joinpath('static'))
-# ]
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
+]
+
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
