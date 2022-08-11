@@ -1,0 +1,1 @@
+web: guncorn config.wsgi --log-file -
