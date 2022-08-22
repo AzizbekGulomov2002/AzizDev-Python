@@ -4,7 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-gunicorn = "*"
+gunicorn = "==20.1.0"
+django = "==4.0.5"
+heroku = "==0.1.4"
+pillow = "==9.0.0"
+pipenv = "==2021.11.23"
+psycopg2 = "==2.9.3"
+virtualenv = "==20.13.0"
+whitenoise = "==6.0.0"
+django-jazzmin = "*"
 
 [dev-packages]
 
