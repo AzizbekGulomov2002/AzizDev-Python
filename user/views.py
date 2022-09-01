@@ -5,10 +5,12 @@ from .models import Infomatsion, Service, Document
 
 class Index(View):
     def get(self, request):
-        info = Infomatsion.objects.get(pk=1)
-        service = Service.objects.all()
-        documents = Document.objects.all()
-        
+        try:        
+            info == None
+        except:
+            info = Infomatsion.objects.get(pk=1)
+            service = Service.objects.all()
+            documents = Document.objects.all()
         return render(request, 'index.html',
                       {'info': info,
                        'service': service,
